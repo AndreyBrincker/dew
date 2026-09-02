@@ -1,8 +1,25 @@
+header{
+    
+}
+
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSUHZaMvjptXigoQz-01THzln0a3Xx8y5GnkWw5vaRVA&s=10') ;
+  background-repeat: no-repeat;   /* não repete a imagem */
+  background-size: cover;         /* cobre toda a tela, sem distorcer */
+  background-position: center;    /* centraliza a imagem */
+  background-attachment: fixed;   /* fixa o fundo (não rola com a página) */
+  height: 100vh;                  /* garante altura total da tela */
+  margin: 0;
+}
+
+
 a{
     image-orientation: from-image;
+    color: azure;
 }
 /* 4 */
 h1{
+    color: azure;
     font-size: 50px;
     text-transform: uppercase;
 }
@@ -13,6 +30,7 @@ p::first-letter{
 
 /*6*/
 a:hover{
+    
     text-decoration: none;
 }
 
@@ -23,5 +41,11 @@ h3,
 h4,
 h5,
 h6{
+    
     text-align: center;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
 }
