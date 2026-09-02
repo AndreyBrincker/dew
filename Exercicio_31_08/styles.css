@@ -1,0 +1,27 @@
+a{
+    image-orientation: from-image;
+}
+/* 4 */
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+/*5*/
+p::first-letter{
+    text-decoration: uppercase;
+}
+
+/*6*/
+a:hover{
+    text-decoration: none;
+}
+
+/*7*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    text-align: center;
+}
