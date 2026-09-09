@@ -1,9 +1,7 @@
-header{
-    
-}
+
 
 body{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSUHZaMvjptXigoQz-01THzln0a3Xx8y5GnkWw5vaRVA&s=10') ;
+    
   background-repeat: no-repeat;   
   background-size: cover;         
   background-position: center;    
@@ -15,11 +13,14 @@ body{
 
 a{
     image-orientation: from-image;
-    color: azure;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
 }
+
 /* 4 */
 h1{
-    color: azure;
+    color: rgb(0, 0, 0);
     font-size: 50px;
     text-transform: uppercase;
 }
@@ -48,4 +49,8 @@ h6{
 img{
     display: block;
     margin: 0 auto;
+}
+
+ul{
+    text-align: center;
 }
