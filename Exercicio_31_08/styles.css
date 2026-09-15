@@ -1,4 +1,10 @@
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
+}
 
 body{
     
@@ -8,8 +14,46 @@ body{
   background-attachment: fixed;   
   height: 100vh;                  
   margin: 0;
+  background-color:antiquewhite;
 }
 
+header{
+    background-color: rgb(3, 255, 255);
+    padding: 15px;
+}
+
+#primeiroTexto{
+   margin: 0%;
+    padding: 20px;
+    text-align: center;
+}
+button{
+    border: none;
+    background: none;
+    scale: 1.5;
+    cursor: pointer;
+}
+
+#menuLateral{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    background-color: aqua;
+    border-right: 2px solid #08d4f8;
+
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    
+    transform: translateX(-100%);
+    transition: 0.4s;
+}
+
+#menuLateral.aberto{
+    transform: translateX(0);
+}
 
 a{
     image-orientation: from-image;
@@ -24,12 +68,15 @@ h1{
     font-size: 50px;
     text-transform: uppercase;
 }
+
 /*5*/
+
 p::first-letter{
     text-decoration: uppercase;
 }
 
 /*6*/
+
 a:hover{
     
     text-decoration: none;
