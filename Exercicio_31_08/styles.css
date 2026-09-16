@@ -1,0 +1,168 @@
+/* # para selecionar elementos pelo id */
+/* . para selecionar elementos pela classe */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: rgba(0, 4, 253, 0.925);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+#fecharmenu {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: rgb(3, 3, 3);
+    font-size: 20px;
+    font-weight: bold;
+}
+#botaoabrirmenu {
+  position: absolute;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+#titulo {
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+header button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+#descricao {
+    padding: 12px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0, 4, 253, 0.925);
+    }
+#menuLateral{
+    position: fixed;      /* fica grudado na tela, não na página */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background: rgba(248, 248, 248, 0.986);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    transform: translateX(-100%);   /* escondido fora da tela por padrão */
+    transition: transform 0.4s ease; /* anima suavemente qualquer mudança de transform */
+}
+#menuLateral.aberto {
+  transform: translateX(0);
+}
+#menuLateral ul {
+  list-style: none;
+  margin-top: 40px;
+}
+ 
+#menuLateral li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+ 
+#menuLateral a {
+  text-decoration: none;
+  color: #222;
+}
+ 
+#botaoFechar {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+article {
+    width: 75%;
+    padding: 12px;
+    margin: 20px auto;
+    background-color: #f5f1f100;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 4, 253, 0.295);
+    box-sizing: border-box;
+}
+/* Fundo escuro cobrindo a tela inteira */
+#overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+  z-index: 998;                       /* Fica atrás do menu, mas acima do resto do site */
+  opacity: 0;
+  pointer-events: none;               /* Não bloqueia cliques enquanto estiver invisível */
+  transition: opacity 0.4s ease;
+}
+#overlay.ativo {
+  opacity: 1;
+  pointer-events: auto;               /* Volta a aceitar cliques para poder fechar */
+}
+
+/* Garanta que seu menu tenha um z-index maior que o overlay */
+#menuLateral {
+  z-index: 999;                       /* Fica por cima do overlay */
+}
+
+/* Quando o overlay ganha a classe .ativo, ele aparece */
+#overlay.ativo {
+  opacity: 1;
+  pointer-events: auto;               /* Volta a aceitar cliques para poder fechar */
+}
+.img1 {
+  width: 25%; 
+  height: auto;      
+  margin-left: auto;   
+  margin-right: auto;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 4, 253, 0.295);
+  cursor: pointer;
+ transition: transform 0.3s ease; /* Animação suave */
+}
+
+.img2 {
+  width: 25%; 
+  height: auto;     
+  margin:25px; 
+  margin-left: auto;   
+  margin-right: auto;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 4, 253, 0.295);
+  cursor: pointer;
+ 
+  transition: transform 0.3s ease; /* Animação suave */
+}
+
+.img1:hover, .img2:hover {
+  transform: scale(1.05); /* Aumenta o tamanho em 5% */
+  
+}
