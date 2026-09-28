@@ -1,56 +1,32 @@
-
-
+*{
+    top: 0;
+    margin: 0;
+}
 body{
-    
-  background-repeat: no-repeat;   
-  background-size: cover;         
-  background-position: center;    
-  background-attachment: fixed;   
-  height: 100vh;                  
-  margin: 0;
+    margin: 20px;
+    padding: 20px;
 }
-
-
-a{
-    image-orientation: from-image;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    
+header{
+    justify-items: center;
 }
-
-/* 4 */
 h1{
-    color: rgb(0, 0, 0);
-    font-size: 50px;
-    text-transform: uppercase;
+    color: aliceblue;
 }
-/*5*/
-p::first-letter{
-    text-decoration: uppercase;
-}
-
-/*6*/
 a:hover{
-    
-    text-decoration: none;
+    opacity: 0.5s;
 }
-
-/*7*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-    
-    text-align: center;
+.banner{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    background-image: url(https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2015/09/03/150903135625_most_breathtaking_night_skies_2_624x351_novarcimagesalamy_nocredit.jpg.webp);     
+    background-repeat: no-repeat;
 }
-
-img{
-    display: block;
-    margin: 0 auto;
+.hide{
+    display:none
 }
-
-ul{
-    text-align: center;
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
